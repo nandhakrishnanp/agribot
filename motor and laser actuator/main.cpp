@@ -19,6 +19,7 @@ const char* password = "12345678";
 
 Servo servo_1;
 Servo servo_2;
+Servo servo_3;
 
 // Shared data and mutex
 SemaphoreHandle_t mutex;

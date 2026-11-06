@@ -96,51 +96,6 @@ The model detects and classifies the following common agricultural weeds:
 
 ---
 
-## Project File Structure
-
-```
-agribot/
-├── README.md                          # Project documentation
-├── app.json                           # Expo app configuration
-├── package.json                       # Node.js dependencies
-├── tsconfig.json                      # TypeScript configuration
-├── tailwind.config.js                 # Tailwind CSS configuration
-├── nativewind-env.d.ts               # NativeWind type definitions
-├── metro.config.js                    # Metro bundler configuration
-├── babel.config.js                    # Babel transpiler configuration
-├── eslint.config.js                   # ESLint configuration
-├── axiosconfig.js                     # Axios HTTP client configuration
-├── eas.json                           # Expo Application Services config
-├── expo-env.d.ts                      # Expo environment types
-├── global.css                         # Global stylesheet
-│
-├── app/                               # React Native app directory
-│   ├── _layout.tsx                    # App layout/navigation
-│   └── index.tsx                      # Home screen
-│
-├── assets/                            # Static assets
-│   ├── fonts/
-│   │   └── SpaceMono-Regular.ttf      # Custom font
-│   └── images/
-│       ├── adaptive-icon.png
-│       ├── favicon.png
-│       ├── icon.png
-│       ├── iconagri.png              # Agriculture-themed icon
-│       ├── partial-react-logo.png
-│       ├── react-logo.png
-│       ├── react-logo@2x.png
-│       ├── react-logo@3x.png
-│       └── splash-icon.png
-│
-└── media/                             # Project media resources
-    ├── rover.jpg                      # Rover hardware image
-    ├── laser.png                      # Laser system diagram
-    ├── motor_actuator.jpg             # Motor actuation system
-    └── weed.jpg                       # Weed detection sample
-```
-
----
-
 ## Getting Started
 
 ### Prerequisites
