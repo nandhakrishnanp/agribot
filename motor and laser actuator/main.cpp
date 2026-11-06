@@ -1,6 +1,5 @@
 #include <WiFi.h>
 #include <ESPAsyncWebServer.h>
-#include <ESPmDNS.h>
 #include <ArduinoJson.h>
 #include <ESP32Servo.h>
 
@@ -140,10 +139,6 @@ void setup() {
     Serial.println("Connecting to WiFi...");
   }
   Serial.println("WiFi connected: " + WiFi.localIP().toString());
-
-  // Start mDNS
-  if(MDNS.begin("agribot")) Serial.println("mDNS responder started");
-  else Serial.println("Error setting up MDNS responder!");
 
   // POST /cmd handler
   server.on("/cmd", HTTP_POST, [](AsyncWebServerRequest *request){},
